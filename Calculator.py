@@ -14,8 +14,8 @@ def division(x, y):
     z = x / y
     return z
 
-x = int(input("Enter your number a:"))
-y = int(input("Enter your number b:"))
+x = float(input("Enter your number x:"))
+y = float(input("Enter your number y:"))
 
 a = addition(x, y)
 b = subtraction(x, y)
@@ -23,10 +23,10 @@ c = multiplication(x, y)
 d = division(x, y)
 
 if a:
-    print(addition(x, y))
+    print(round(addition(x, y), 3))
 elif b:
-    print(subtraction(x, y))
+    print(round(subtraction(x, y), 3))
 elif c:
-    print(subtraction(x, y))
-else:
-    print(division(x, y))
+    print(round(subtraction(x, y), 3))
+else d:
+    print(round(division(x, y), 3))
